@@ -59,10 +59,11 @@ export default async function Pictures() {
                   alt={image.name}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                  <p className="text-white text-sm font-medium">{image.name}</p>
-                  <p className="text-white/80 text-xs truncate">{image.url}</p>
+                <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-center">
+                    <p className="text-white text-sm font-medium">{image.name}</p>
+                    <p className="text-white/80 text-xs truncate max-w-[80%]">{image.url}</p>
                 </div>
+
               </div>
             </div>
           ))}
