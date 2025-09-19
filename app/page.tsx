@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
@@ -24,9 +25,12 @@ export default function Home() {
             photographs.
           </p>
           <div className="flex items-center justify-center gap-4">
-            <button className="bg-black text-white hover:bg-gray-800 px-8 py-3 text-base rounded-md transition-colors font-medium">
+            <Link
+              href="/pictures"
+              className="bg-black text-white hover:bg-gray-800 px-8 py-3 text-base rounded-md transition-colors font-medium"
+            >
               View Gallery
-            </button>
+            </Link>
             <button className="px-8 py-3 text-base border border-gray-300 text-gray-700 hover:bg-gray-50 bg-transparent rounded-md transition-colors font-medium">
               Learn More
             </button>
