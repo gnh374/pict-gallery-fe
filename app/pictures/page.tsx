@@ -53,13 +53,13 @@ export default async function Pictures() {
               key={image.id}
               className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-200"
             >
-              <div className="aspect-square relative">
+              <div className="aspect-square relative group">
                 <img
-                  src={` ${image.url}`}
+                  src={image.url}
                   alt={image.name}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                   <p className="text-white text-sm font-medium">{image.name}</p>
                   <p className="text-white/80 text-xs truncate">{image.url}</p>
                 </div>
