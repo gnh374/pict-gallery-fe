@@ -37,7 +37,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.5.3",
     "@eslint/eslintrc": "^3",
-    "prettier": "2.8.0",
+    "prettier": "2.8.8",
     "husky": "8.0.0",
     "lint-staged": "13.0.0"
   }
